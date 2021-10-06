@@ -23,8 +23,27 @@ done by looking up each letter of the plaintext in the key table and replacing i
 encoded letter. To _decode_ simply reverse the process: find the encoded letter in the ciphertext row
 and replace it with the corresponding plaintext letter above it.
 
-## Project Description
+## Project Synopsis
 
 Write _two_ programs called `Encrypt.java`and `Decrypt.java` with the following specifications 
 
 ### Encryption
+The program `Encrypt.java` should read a String of plaintext from the commandline and encode it
+into a cipher text using a key read in from a text file (see below). Finally it should print the
+cipher text to the command line.
+
+### Decryption
+Similarly, the program `Decrypt.java` should read a String of ciphertext from the command line and
+decode it into plaintext using a key read in from a text file (see below). Finally it should print
+the cipher text to the command line.
+
+### Key Generation (optional)
+Write a program called `Keygen.java` which prints out a random shuffling of the 26 characters of the
+English alphabet which will serve as the key for a cipher.
+
+Upload you assignment to CodePost by the due date (see CodePost for details).
+
+## Specs and Helpful How-Tos
+You will need to follow particular specifications and use some commands which we did not discuss in
+class in order to complete this project. Please read each of the sections below for additional
+information.
