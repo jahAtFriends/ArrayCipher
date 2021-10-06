@@ -12,11 +12,16 @@ Every cipher has three components:
 3. _Key_: The mechanism for encoding/decoding the plaintext into the cipher text and vice-versa.
 
 In the simple substitution cipher, each letter is systematically swapped out for another letter.
-Here is an example of a _key_ which translates a letter from plaintext to the cipher text.
+Here is an example of a _key_ which translates a letter from plaintext to the cipher text:
 
 | Plaintext  | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 |------------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Ciphertext | H | U | D | Q | E | N | O | A | V | X | J | S | Z | L | W | Y | R | G | F | P | B | C | I | T | M | K |
+
+Using this key, the phrase "IT WAS THE BEST OF TIMES" becomes "VP IHF PAE UEFP WN PVZEF." This is
+done by looking up each letter of the plaintext in the key table and replacing it with the corresponging
+encoded letter. To _decode_ simply reverse the process: find the encoded letter in the ciphertext row
+and replace it with the corresponding plaintext letter above it.
 
 ## Project Description
 
