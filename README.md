@@ -25,5 +25,6 @@ and replace it with the corresponding plaintext letter above it.
 
 ## Project Description
 
-Write a program called `Crypto.java` that takes a String as a command line argument and prints
-out a simple substitution cipher
+Write _two_ programs called `Encrypt.java`and `Decrypt.java` with the following specifications 
+
+### Encryption
