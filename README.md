@@ -96,4 +96,16 @@ Scanner input = new Scanner(System.in);
 char[] key = new char[26];
 for (int i = 0; i < key.length; i++) {
     key[i] = input.nextChar();
-} ```
+} 
+```
+
+### Output to a Text File (for Keygen only).
+To write to a text file, you can simply use a series of `print()` statements in your program
+and then direct them to be written to a new text file from the command line:
+
+```bash
+java Keygen > key.txt
+```
+
+This will write the entire output to a text file named "key.txt". If the file does not already
+exist, it will be created for you; if it _does_ exist already, it will be overwritten.
