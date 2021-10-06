@@ -30,12 +30,12 @@ Write _two_ programs called `Encrypt.java`and `Decrypt.java` with the following 
 ### Encryption
 The program `Encrypt.java` should read a String of plaintext from the commandline and encode it
 into a cipher text using a key read in from a text file (see below). Finally it should print the
-cipher text to the command line.
+cipher text to the command line in all-caps.
 
 ### Decryption
 Similarly, the program `Decrypt.java` should read a String of ciphertext from the command line and
 decode it into plaintext using a key read in from a text file (see below). Finally it should print
-the cipher text to the command line.
+the cipher text to the command line in all-caps.
 
 ### Key Generation (optional)
 Write a program called `Keygen.java` which prints out a random shuffling of the 26 characters of the
@@ -68,3 +68,32 @@ String message = "Hello World";
 char[] plaintext = message.toCharArray();
 ```
 This will result in the array `{'H','e','l','l','o',' ','W','o','r','l','d'}`.
+
+### Store a Cipher's Key as a Text File
+You can store a substitution cipher's key as 26 letters (separated by a space). This
+should be interpreted to mean the first letter as an encoding for 'A', the second as
+an encoding for 'B' and so on. A text file (say "key.txt") version of the example key
+shown above would be "H U D Q E N N O A V X J S Z L W Y R G F P B C I T M K".
+
+### Read in data from a text file.
+To use a text file as input through StdIn ("standard input" usually the same as
+`System.in`), save the text file in the same directory as the .java file you are
+intending to compile and run. From the command line type:
+
+```bash
+javac Encrypt.java
+java Encrypt < key.txt
+```
+
+This will allow the content of key.txt to be read by the program `Encrypt`.
+
+### Reading data from a text file through StdIn
+If a text file is fed into a program using the commandline as shown above, your program
+can use a ```Scanner``` to access it in the following manner.
+
+```java
+Scanner input = new Scanner(System.in);
+char[] key = new char[26];
+for (int i = 0; i < key.length; i++) {
+    key[i] = input.nextChar();
+} ```
