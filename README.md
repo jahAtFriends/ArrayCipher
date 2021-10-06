@@ -47,3 +47,14 @@ Upload you assignment to CodePost by the due date (see CodePost for details).
 You will need to follow particular specifications and use some commands which we did not discuss in
 class in order to complete this project. Please read each of the sections below for additional
 information.
+
+### Convert a String to an all-UPPERCASE String
+For this assignment, you do not need to treat upper- and lower-case letters differently. You may
+simply print the result in all-caps. The following String method will be helpful:
+
+```java
+String message = "Hello World";
+message = message.toUpperCase();
+```
+
+This will result in the value "HELLO WORLD" being stored in the String variable `message.`
