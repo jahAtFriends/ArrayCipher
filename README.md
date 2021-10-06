@@ -58,3 +58,13 @@ message = message.toUpperCase();
 ```
 
 This will result in the value "HELLO WORLD" being stored in the String variable `message.`
+
+### Convert a String to an array of Chars
+It may be helpful to store each letter of a String of chars so that you can access and 
+edit them one-by-one. Here's some helpful code to make that conversion:
+
+```java
+String message = "Hello World";
+char[] plaintext = message.toCharArray();
+```
+This will result in the array `{'H','e','l','l','o',' ','W','o','r','l','d'}`.
