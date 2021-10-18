@@ -93,10 +93,8 @@ can use a ```Scanner``` to access it in the following manner.
 
 ```java
 Scanner input = new Scanner(System.in);
-char[] key = new char[26];
-for (int i = 0; i < key.length; i++) {
-    key[i] = input.nextChar();
-} 
+String keyString = input.next();
+char[] key = keyString.toCharArray();
 ```
 
 ### Output to a Text File (for Keygen only).
